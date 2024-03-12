@@ -1,0 +1,7 @@
+gst_datasets/
+gst_updated/scripts/data
+.idea/
+.vscode/
+venv/
+*.pyc
+*__pycache__*

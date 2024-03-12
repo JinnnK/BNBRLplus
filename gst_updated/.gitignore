@@ -1,0 +1,4 @@
+myenv/
+*.pickle
+*.png
+*.pt
