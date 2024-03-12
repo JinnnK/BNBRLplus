@@ -1,7 +1,7 @@
 # Belief-Aided-Navigation using Bayesian Neural Networks and Deep Reinforcement Learning for Avoiding Humans in Blind Spots
 
-This repository contains the codes for our paper titled "Transformable Gaussian Reward Function for Robot Navigation with Deep Reinforcement Learning".
-The original simulation setting and sourcecode come from [here](https://sites.google.com/view/intention-aware-crowdnav/home). If you want to see the original version, please refer to the link above.
+This repository contains the codes for our paper titled "Belief-Aided-Navigation using Bayesian Neural Networks and Deep Reinforcement Learning for Avoiding Humans in Blind Spots".
+The original simulation setting and sourcecode come from [here](https://github.com/JinnnK/TGRF). If you want to see the original version, please refer to the link above.
 For more details, here is [arXiv preprint]() and [youtube video]() for experiment in real world.
 
 ## Abstract
@@ -44,32 +44,8 @@ Note that this repository does not include codes for training a trajectory predi
 ## Run the code
 ### Training
 - Modify the configurations.
-  1. Environment configurations: Modify `crowd_nav/configs/config.py`. Especially,
-     - Choice of type of danger zone:
-       - Set `reward.danger_zone_type = 'gaussian'` if my gaussian model is used. It is available for any type of options below. It penalizes the robot depending on the distance between the robot and human following the folumla in the paper. And you can customize your own reward function by adjsuting some hyperparameters in `crowd_nav/configs/config.py`.
-         - `reward.discomfort_dist` : The range of discomfort distance. If distance between the robot and human is lower than discomfort distance, it will penalize following the fomula in the paper.
-         - `reward.gamma` : Discount Factor.
-         - `reward.sigma` : Sigma of gaussian distribution. You can adjust the sigma of gaussian distribution by adjusting this.
-         - `reward.penalty_intensity` : The intensity of gaussian distribution. This factor is muliplied with the value of gaussian distribution. If you set this as 1, the discomfort distance penalty will penalize upto the value of `reward.collision_penalty`.
-         - `reward.goal_factor` : The parameter of potential reward. It is multiplied with the potential reward linearly and make the robot get to the goal as soon as possible. But also goes up the porbability of collision.
-         - `reward.success_reward` : Reward when the robot get to the goal. You can adjust this value, but I do not recommand to adjust this. Because the balance between other value is more important.
-         - `reward.collision_penalty` : Reward when the robot collises with human. You can adjust this value, but I do not recommand to adjust this. Because the balance between other value is more important.
 
-       - Set `reward.danger_zone_type = 'future'`. It is a type which the previous paper used. It is only compatible with `robot.policy = 'selfAttn_merge_srnn'`. If you want to see the fomula of this reward model, please refer to [the paper]() or the [previous paper]()
-         - `reward.success_reward`, `reward.collision_penalty`, `reward.discomfort_dist`, and `reward.gamma`are same.
-         - `env.time_step` : time step of sampling. You can adjust how many sample you want to see. It affect the reward of discomfort distance.
-       - Set `reward.danger_zone_type = 'circle'` : It is a type which the more previous paper used. It is only compatible with `robot.policy = 'srnn'`, DS-RNN.
-     - Choice of policy of the robot:
-       - Set `robot.policy = 'selfAttn_merge_srnn'` if you want to use GST predictor and HH Attn.
-       - Set `robot.policy = 'srnn'` if you want to use DS-RNN.
-
-     - Choice of human trajectory predictor:
-       - Set `sim.predict_method = 'inferred'` if a learning-based GST predictor is used [2]. Please also change `pred.model_dir` to be the directory of a trained GST model. We provide two pretrained models [here](https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph/tree/main/gst_updated/results/).
-       - Set `sim.predict_method = 'const_vel'` if constant velocity model is used.
-       - Set `sim.predict_method = 'truth'` if ground truth predictor is used.
-       - Set `sim.predict_method = 'none'` if you do not want to use future trajectories to change the observation and reward.
-
-  2. PPO and network configurations: modify `arguments.py`
+  1. PPO and network configurations: modify `arguments.py`
      - `env_name` (must be consistent with `sim.predict_method` in `crowd_nav/configs/config.py`):
         - If you use the GST predictor, set to `CrowdSimPredRealGST-v0`.
         - If you use the ground truth predictor or constant velocity predictor, set to `CrowdSimPred-v0`.
@@ -77,7 +53,7 @@ Note that this repository does not include codes for training a trajectory predi
      - `use_self_attn`: human-human attention network will be included if set to True, else there will be no human-human attention.
      - `use_hr_attn`: robot-human attention network will be included if set to True, else there will be no robot-human attention.
 
-  3. (belief) Will be added
+  2. BNBRL+ will be added
 
 - After you change the configurations, run
   ```
@@ -99,11 +75,17 @@ If you set `visualize=True` in `test.py`, you will be able to see visualizations
 python plot.py
 ```
 
+### Simulation
+
+Will be added
+
 ### Evaluation
 
 <p align="center">
 <img src="/figures/evaluation.png" width="550" />
 </p>
+
+You can see BNBRL+ shows improved results. For more explanation, please refer to the [paper]()
 
 ## Disclaimer
 1. I only tested my code in Ubuntu with Python 3.9.16 The code may work on other OS or other versions of Python, but I do not have any guarantee.
