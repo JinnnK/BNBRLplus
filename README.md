@@ -7,7 +7,7 @@ For more details, here is [arXiv preprint]() and [youtube video]() for experimen
 ## Abstract
 
 <p align="center">
-<img src="/figures/intro.png" width="550" />
+<img src="/figures/intro.png" width="700" />
 </p>
 
 ## Setup
@@ -82,7 +82,7 @@ Will be added
 ### Evaluation
 
 <p align="center">
-<img src="/figures/evaluation.png" width="550" />
+<img src="/figures/evaluation.png" width="700" />
 </p>
 
 You can see BNBRL+ shows improved results. For more explanation, please refer to the [paper]()
