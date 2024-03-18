@@ -2,7 +2,7 @@
 
 This repository contains the codes for our paper titled "Belief-Aided-Navigation using Bayesian Neural Networks and Deep Reinforcement Learning for Avoiding Humans in Blind Spots".
 The original simulation setting and sourcecode come from [here](https://github.com/JinnnK/TGRF). If you want to see the original version, please refer to the link above.
-For more details, here is [arXiv preprint]() and [youtube video]() for experiment in real world.
+For more details, here is [arXiv preprint](https://arxiv.org/abs/2403.10105) and [youtube video]() for experiment in real world.
 
 ## Abstract
 
@@ -85,7 +85,7 @@ Will be added
 <img src="/figures/evaluation.png" width="700" />
 </p>
 
-You can see BNBRL+ shows improved results. For more explanation, please refer to the [paper]()
+You can see BNBRL+ shows improved results. For more explanation, please refer to the [paper](https://arxiv.org/abs/2403.10105)
 
 ## Disclaimer
 1. I only tested my code in Ubuntu with Python 3.9.16 The code may work on other OS or other versions of Python, but I do not have any guarantee.
@@ -127,5 +127,6 @@ Part of the code is based on the following repositories:
 
 [1] P. Chang, N. Chakraborty, and Z. Huang, "Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph," in IEEE International Conference on Robotics and Automation (ICRA), 2023. (Github: https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph)
 
-[2] Z. Huang, R. Li, K. Shin, and K. Driggs-Campbell. "Learning Sparse Interaction Graphs of Partially Detected Pedestrians for Trajectory Prediction," in IEEE Robotics and Automation Letters, vol. 7, no. 2, pp. 1198–1205, 2022. (Github: https://github.com/tedhuang96/gst)
+[2] Kim, J., et al., Transformable Gaussian Reward Function for SociallyAware Navigation with Deep Reinforcement Learning. arXiv preprint
+arXiv:2402.14569, 2024. (Github: https://github.com/JinnnK/TGRF)
 
