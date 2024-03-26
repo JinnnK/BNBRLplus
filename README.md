@@ -77,7 +77,17 @@ python plot.py
 
 ### Simulation
 
-Will be added
+## Scenario 1 (No blink, 20 humans)
+
+<p align="center">
+<img src="/figures/BNBRL+_case_1.gif" width="700" />
+</p>
+
+## Scenario 2 (blink for 0.5 sec, 20 humans)
+
+<p align="center">
+<img src="/figures/BNBRL+_case_2.gif" width="700" />
+</p>
 
 ### Evaluation
 
