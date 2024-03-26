@@ -86,13 +86,13 @@ python plot.py
 ## Scenario 2 (blink for 0.5 sec, 20 humans)
 
 <p align="center">
-<img src="/figures/BNBRL+_case_2.gif" width="700" />
+<img src="/figures/BNBRL+_case_2.gif" width="350" />
 </p>
 
 ### Evaluation
 
 <p align="center">
-<img src="/figures/evaluation.png" width="700" />
+<img src="/figures/evaluation.png" width="350" />
 </p>
 
 You can see BNBRL+ shows improved results. For more explanation, please refer to the [paper](https://arxiv.org/abs/2403.10105)
