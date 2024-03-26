@@ -75,15 +75,15 @@ If you set `visualize=True` in `test.py`, you will be able to see visualizations
 python plot.py
 ```
 
-### Simulation
+## Simulation
 
-## Scenario 1 (No blink, 20 humans)
+### Scenario 1 (No blink, 20 humans)
 
 <p align="center">
 <img src="/figures/BNBRL+_case_1.gif" width="350" />
 </p>
 
-## Scenario 2 (blink for 0.5 sec, 20 humans)
+### Scenario 2 (blink for 0.5 sec, 20 humans)
 
 <p align="center">
 <img src="/figures/BNBRL+_case_2.gif" width="350" />
