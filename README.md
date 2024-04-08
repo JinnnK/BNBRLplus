@@ -52,8 +52,16 @@ Note that this repository does not include codes for training a trajectory predi
         - If you don't want to use prediction, set to `CrowdSimVarNum-v0`.
      - `use_self_attn`: human-human attention network will be included if set to True, else there will be no human-human attention.
      - `use_hr_attn`: robot-human attention network will be included if set to True, else there will be no robot-human attention.
-
-  2. BNBRL+ will be added
+     - `use_bnn`: Allows you to select whether or not to use BNN. If not using, change it to false.
+     - `bnn_policy`: Allows you to choose the type of BNN. Options include `BNBRL+`, `BNBRL`, `BNDNN`, `none`, etc. Please refer to the paper for the characteristics of each neural network.
+     - `hidden_dim`, `output_dim`: Allows you to set the number of nodes in the middle and output layers of the BNN.
+  2. You can set the characteristics of BNN in `crowd_nav/configs/config.py`.
+     - `robot.belief`: Enables or disables belief. If `use_bnn == false`, then it should be set to false.
+     - `sim.human_num`: Allows you to set the number of people. Note that the number of people in training and testing must be the same.
+     - `sim.belief_radius`: The radius size of belief.
+     - `robot.FOV`: The angle of the blind spot. 1 represents 180 degrees.
+     - `sim.tracker`: Adds a person who continuously tracks the robot's position.
+     - `robot.blink`: Makes the robot unable to obtain information with LiDAR for a certain period of time. The `robot.blink_period` and `robot.blink_time` are fixed values and should not be modified.
 
 - After you change the configurations, run
   ```
