@@ -122,19 +122,6 @@ If you find the code or the paper useful for your research, please cite the foll
   year={2024}
 }
 
-@inproceedings{,
-  title={Transformable Gaussian Reward Function for Robot Navigation with Deep Reinforcement Learning},
-  author={Jinyeob Kim},
-  booktitle={},
-  year={2024}
-}
-
-@inproceedings{liu2022intention,
-  title={Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph},
-  author={Liu, Shuijing and Chang, Peixin and Huang, Zhe and Chakraborty, Neeloy and Hong, Kaiwen and Liang, Weihang and Livingston McPherson, D. and Geng, Junyi and Driggs-Campbell, Katherine},
-  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
-  year={2023}
-}
 ```
 
 ## Credits
@@ -143,8 +130,8 @@ Email : wls2074@khu.ac.kr
 
 Part of the code is based on the following repositories:
 
-[1] P. Chang, N. Chakraborty, and Z. Huang, "Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph," in IEEE International Conference on Robotics and Automation (ICRA), 2023. (Github: https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph)
-
-[2] Kim, J., et al., Transformable Gaussian Reward Function for SociallyAware Navigation with Deep Reinforcement Learning. arXiv preprint
+[1] Kim, J., et al., Transformable Gaussian Reward Function for SociallyAware Navigation with Deep Reinforcement Learning. arXiv preprint
 arXiv:2402.14569, 2024. (Github: https://github.com/JinnnK/TGRF)
+
+[2] P. Chang, N. Chakraborty, and Z. Huang, "Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph," in IEEE International Conference on Robotics and Automation (ICRA), 2023. (Github: https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph)
 
