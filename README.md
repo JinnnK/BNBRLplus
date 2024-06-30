@@ -4,6 +4,9 @@ This repository contains the codes for our paper titled "Belief-Aided-Navigation
 The original simulation setting and sourcecode come from [here](https://github.com/JinnnK/TGRF). If you want to see the original version, please refer to the link above.
 For more details, here is [arXiv preprint](https://arxiv.org/abs/2403.10105) and [youtube video]() for experiment in real world.
 
+## 🔥News
+- [06.30] Accepted in IROS 2024!
+
 ## Abstract
 
 <p align="center">
