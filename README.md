@@ -2,10 +2,10 @@
 
 This repository contains the codes for our paper titled "Belief-Aided-Navigation using Bayesian Neural Networks and Deep Reinforcement Learning for Avoiding Humans in Blind Spots".
 The original simulation setting and sourcecode come from [here](https://github.com/JinnnK/TGRF). If you want to see the original version, please refer to the link above.
-For more details, here is [arXiv preprint](https://arxiv.org/abs/2403.10105).
+For more details, here is [arXiv preprint](https://arxiv.org/abs/2403.10105) and [Youtube]().
 
 ## 🔥News
-- [06.30] Accepted in IROS 2024!
+- [06.30] Accepted to IROS 2024!
 
 ## Abstract
 
@@ -32,7 +32,10 @@ pip install -e .
 
 3. Install [Python-RVO2](https://github.com/sybrenstuvel/Python-RVO2) library
 
-Our source code does not work with numpy 1.26.3. Please install version 1.20.3.
+4. Our source code does not work with numpy 1.26.3. Please install version 1.20.3.
+```
+pip install numpy==1.20.3
+```
 
 ## Overview
 This repository is organized in five parts:
@@ -100,14 +103,6 @@ python plot.py
 <img src="/figures/BNBRL+_case_2.gif" width="350" />
 </p>
 
-### Evaluation
-
-<p align="center">
-<img src="/figures/evaluation.png" width="700" />
-</p>
-
-You can see BNBRL+ shows improved results. For more explanation, please refer to the [paper](https://arxiv.org/abs/2403.10105)
-
 ## Disclaimer
 1. I only tested my code in Ubuntu with Python 3.9.16 The code may work on other OS or other versions of Python, but I do not have any guarantee.
 
@@ -118,13 +113,13 @@ To achieve the best performance, I recommend some manual hyperparameter tuning.
 ## Citation
 If you find the code or the paper useful for your research, please cite the following papers:
 ```
-@inproceedings{,
-  title={Belief-Aided-Navigation using Bayesian Neural Networks and Deep Reinforcement Learning for Avoiding Humans in Blind Spots},
-  author={Jinyeob Kim},
-  booktitle={},
-  year={2024}
+@inproceedings{kim2024belief,
+  title={Belief Aided Navigation using Bayesian Reinforcement Learning for Avoiding Humans in Blind Spots},
+  author={Kim, J. and Kwak, D. and Rim, H. and Kim, D.},
+  booktitle={Proceedings of the Conference on AI and Robotics},
+  year={2024},
+  organization={arXiv preprint arXiv:2403.10105}
 }
-
 ```
 
 ## Credits
