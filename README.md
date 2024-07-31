@@ -2,7 +2,7 @@
 
 This repository contains the codes for our paper titled "Belief-Aided-Navigation using Bayesian Neural Networks and Deep Reinforcement Learning for Avoiding Humans in Blind Spots".
 The original simulation setting and sourcecode come from [here](https://github.com/JinnnK/TGRF). If you want to see the original version, please refer to the link above.
-For more details, here is [arXiv preprint](https://arxiv.org/abs/2403.10105) and [Youtube]().
+For more details, here is [arXiv preprint](https://arxiv.org/abs/2403.10105) and [Youtube](https://youtu.be/B7IXV9PRns0?si=-AIeWC6wRPRsBVcS).
 
 ## 🔥News
 - [06.30] Accepted to IROS 2024!
