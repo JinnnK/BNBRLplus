@@ -128,8 +128,7 @@ Email : wls2074@khu.ac.kr
 
 Part of the code is based on the following repositories:
 
-[1] Kim, J., et al., Transformable Gaussian Reward Function for SociallyAware Navigation with Deep Reinforcement Learning. arXiv preprint
-arXiv:2402.14569, 2024. (Github: https://github.com/JinnnK/TGRF)
+[1] J. Kim, S. Kang, S. Yang, B. Kim, J. Yura, and D. Kim, “Transformable Gaussian Reward Function for Socially Aware Navigation Using Deep Reinforcement Learning,” Sensors, vol. 24,no. 14, p. 4540, 2024. [Online]. Available: https://doi.org/10.3390/s24144540
 
 [2] P. Chang, N. Chakraborty, and Z. Huang, "Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph," in IEEE International Conference on Robotics and Automation (ICRA), 2023. (Github: https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph)
 
